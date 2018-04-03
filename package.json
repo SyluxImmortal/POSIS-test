@@ -1,0 +1,20 @@
+{
+  "name": "posis-test",
+  "version": "1.0.0",
+  "description": "a test for exporting posis interfaces",
+  "main": "index.js",
+  "scripts": {
+    "test": "tslint --project \"tsconfig.json\"",
+    "build": "npm run-script test && rimraf \"./dist\" && tsc -p \"tsconfig.json\""
+  },
+  "author": "Sylux Immortal",
+  "license": "MIT",
+  "dependencies": {
+    "posis-api": "git+https://github.com/screepers/POSIS.git"
+  },
+  "devDependencies": {
+    "@types/screeps": "^2.2.1",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.8.1"
+  }
+}
